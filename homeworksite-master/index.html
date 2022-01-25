@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>KlimaUredjaji</title>
+</head>
+<body>
+  <!-- Header -->
+    <header id="main-header">
+        <nav id="navbar">
+            <img src="./IMG/logo.png" alt="logo">
+            <ul>
+                <li><a href="#home">Početna</a></li>
+                <li><a href="#sale">Akcija</a></li>
+                <li><a href="#offer">Ponuda</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="header-content ">
+            <h1 class="py-3">Doživljaj<br>polarnih noci</h1>
+            <p class="py-2">u stanu, kući ili na poslu doživite nezaboravno <br>iskustvo koje Vam pružaju naši klima uređaji</p>
+        </div>
+        <div class="carousel">
+          <span class="circle" onclick="changeBG('./IMG/HeaderBG.jpg')"></span>
+          <span class="circle" onclick="changeBG('./IMG/carousel2.jpg')"></span>
+          <span class="circle" onclick="changeBG('./IMG/carousel3.jpg')"></span>
+        </div>
+    </header>
+
+    <!-- Section: Sale  -->
+    <section id="sale">
+      <div class="container h-primary">
+        <h3 class="m-normal text-center py-2h"><span class="strikeout">AKCIJA</span></h3>
+        <div class="container-sale">
+          <div class="text-left left-section">
+            <h3 class="py-2">Scole uređaji</h3>
+            <p class="py-1">Lorem ipsum dolor sit amet, consectetur
+adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud
+exercitation ullamco laboris nisi ut aliquip ex
+ea commodo consequat.</p>
+      <a class="btn" href="#contact">KUPI ODMAH</a>
+          </div>
+          <div class="right-section">
+            <img src="./IMG/KlimaAKCIJA.png" alt="klima img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Offer -->
+    <section id="offer">
+      <div class="container h-primary">
+        <h3 class="m-normal text-center py-2h"><span class="strikeout">PONUDA</span></h3>
+        <div class="container-offer">
+        <div class="box">
+          <img src="./IMG/KlimaPONUDA.jpg" alt="KlimaPONUDA">
+          <div class="box-content">
+          <h3 class=" py-2">Solos</h3>
+          <p class="py-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.</p>
+          <p class="py-1 price">29,000 RSD</p>
+        </div>
+        <a href="" class="btnKupi text-center">DODAJ U KORPU</a>
+        </div>
+        <div class="box">
+          <img src="./IMG/KlimaPONUDA.jpg" alt="KlimaPONUDA">
+          <div class="box-content">
+          <h3 class=" py-2">Solos</h3>
+          <p class="py-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.</p>
+          <p class="py-1 price">29,000 RSD</p>
+        </div>
+        <a href="" class="btnKupi text-center">DODAJ U KORPU</a>
+        </div>
+        <div class="box">
+          <img src="./IMG/KlimaPONUDA.jpg" alt="KlimaPONUDA">
+          <div class="box-content">
+          <h3 class=" py-2">Solos</h3>
+          <p class="py-1">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco.</p>
+          <p class="py-1 price">29,000 RSD</p>
+        </div>
+        <a href="" class="btnKupi text-center">DODAJ U KORPU</a>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Footer: Contact -->
+    <footer id="contact">
+      <h3 class="h-contact m-normal text-center py-2h"><span class="strikeout">KONTAKT</span></h3>
+      <div class="form-group">
+      <div class="left-content">
+        <input type="text" name="name" id="name" placeholder="Ime">
+        <input type="text" name="lastname" id="lastname" placeholder="Prezime">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="tel" name="phonenumber" id="phonenumber" placeholder="Kontakt telefon">
+      </div>
+      <div class="right-content">
+        <textarea name="message" id="message" cols="20" rows="9" placeholder="Poruka"></textarea>
+        </div>
+    </div>
+    <div class="container">
+    <div class="contact-info">
+      <div class="icon">
+        <img src="./ICONS/Location.svg" alt="">
+        <span class="underline"></span>
+        <p class="text-center py-1">Omladinskih Brigada 86 Beograd, Srbija</p>
+      </div>
+      <div class="icon">
+        <img src="./ICONS/Mail.svg" alt=""></img>
+        <span class="underline"></span>
+        <p class="text-center py-1">examplemail@mail.com</p>
+      </div>
+      <div class="icon">
+        <img src="./ICONS/Phone.svg" alt=""></img>
+        <span class="underline"></span>
+        <p class="text-center py-1">+381 60 12 34 567<br>+381 68 99 50 999</p>
+      </div>
+    </div>
+    </div>
+    <p class="footer-end text-center py-1">ENON Solutions © 2018. All rights have been reserved.</p>
+  </footer>
+</body>
+<!-- Poorly done carousel rework later -->
+<script>
+  function changeBG(picture) {
+    var pic = document.getElementById('main-header')
+    pic.style.background = 'url('+picture+') no-repeat center center/cover';  
+  }
+</script>
+</html>

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/* Global styling. */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1, h2 {
+  text-transform: uppercase;
+}
+body{
+font-family: 'Montserrat', sans-serif;
+line-height: 1.1;
+background-color: #f2f2f2;
+}
+
+a { text-decoration: none; color: white; }
+li { list-style: none; font-family: 'Montserrat'; }
+h1 { font-weight: 600; }
+p { font-family: 'Quicksand', sans-serif; padding-top: 1rem; }
+div { display: block; }
+textarea{ display: inline-block;}
+
+/* Utility classes */
+
+.py-1 { font-size: 1.1rem; }
+.py-1h { font-size: 1.2rem; }
+.py-2 { font-size: 2rem; }
+.py-2h { font-size: 2.5rem; }
+.py-3 { font-size: 3rem; }
+.py-3 { font-size: 4.5rem; }
+
+.h-primary { color: #5d5d5d }
+.h-contact { color:#fff; padding: 2rem;}
+.bg-primary { background-color: #f2f2f2; }
+.m-normal { margin: 2.5rem;}
+.text-center{ text-align: center;}
+.text-left { text-align: left;}
+
+.strikeout {
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+.strikeout::after {
+    border-bottom: 0.250em solid rgb(47, 212, 183);
+    content: "";
+    left: 0;
+    line-height: 1em;
+    margin-top: 0.2em;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+}
+.container{
+ max-width: 1100px;
+ height: 100%;
+ margin: auto;
+}
+/* Buttons */
+  .btn {
+   display: block;
+   margin-top: 2rem;
+   width: 50%;
+   padding: 1rem 1.33rem;
+   color: white;
+   background: linear-gradient(90deg, rgba(69,140,176,1) 0%, rgba(60,148,162,1) 52%, rgba(49,157,146,1) 100%);
+   text-align: center;
+   transition: border-radius ease 0.5s;
+ }
+ .btn:hover{
+   border-radius: 30px;
+ }
+ .btnKupi {
+   display: inline-block;
+   width: 100%;
+   padding: 1rem 1.33rem;
+   color: white;
+   background-color: #559ac6;
+   margin: auto;
+   transition: background-color 0.1s ease-in;
+ }
+ .btnKupi:hover {
+   background-color: #62b2e4;
+ }
+
+ /* Carousel styling*/
+ .carousel {
+  text-align: center;
+}
+.carousel .circle {
+  display: inline-block;
+  border-radius: 100%;
+  background-color: white;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0 1rem;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: opacity 0.1s ease-out;
+}
+.carousel .circle:hover {
+opacity: 1;
+}
+/* Navbar styling */
+#navbar {
+    display: flex;
+}
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0 250px;
+    z-index: 3;
+}
+#navbar ul li a{
+    display: block;
+    color: white;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    transition: color 0.2s ease-in;
+  }
+#navbar ul li a:hover {
+    color:#2fd4b7;
+}
+/* Header general styling */
+#main-header {
+    box-shadow: inset 0 0 0 1000px rgba(76,125,249,0.2);
+    height: 100vh;
+    background: url('../IMG/HeaderBG.jpg') no-repeat center center/cover;
+    padding: 2.3rem 4rem;
+    color: #fff;
+}
+#main-header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: left;
+    margin-top: -4rem;
+    height: 100%;
+}
+/* Sale Section */
+
+#sale .container-sale {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 1.5;
+  padding-bottom: 100px;
+  border-bottom: #c9c9c9 solid 2px;
+}
+#sale .container-sale div {
+  flex: 1;
+}
+
+/* Offer */
+#offer .container-offer {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 100px;
+}
+#offer .container-offer div {
+  flex: 1;
+}
+#offer .box {
+  margin: 1rem;
+  border: 1px solid rgb(184, 184, 184);
+}
+#offer .box img {
+vertical-align: bottom;
+}
+#offer .box .box-content {
+padding: 1rem 1.5rem;
+border-top: 4px solid #559ac6;
+}
+#offer .box .price {
+  font-size: 2rem;
+  font-style: italic;
+  color: #2fd4b7;
+  margin: 1rem 0;
+}
+/* Contact */
+#contact {
+  background: url('/IMG/FuterBG.jpg') no-repeat center center/cover;
+  box-shadow: inset 0 0 0 1000px rgba(90, 173, 224, 0.8);
+}
+#contact .form-group{
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#contact .left-content {
+  display: flex;
+  flex-direction: column;
+}
+#contact .left-content input {
+  background: #549ac6;
+  border: none;
+  box-shadow: 2px 2px 3px #00000056;
+  color: #fff;
+  width: 400px;
+  margin: 1rem;
+  padding: 0.7rem;
+}
+#contact .left-content input::placeholder , .right-content textarea::placeholder
+{
+  font-size: 1rem;
+  font-family: 'Quicksand';
+  color: rgba(250, 249, 249, 0.925);
+}
+#contact .left-content textarea {
+  flex-direction: row;
+}
+#contact .right-content {
+  width: 400px;
+  margin: 1rem;
+}
+#contact .right-content textarea {
+  color: #fff;
+  background-color: #549ac6;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 2px 2px 3px #00000056;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem;
+}
+#contact input:hover , textarea:hover {
+background-color: #59a6d6;
+}
+
+#contact .contact-info{
+  display: flex;
+  justify-content: center;
+}
+#contact .contact-info img {
+  margin: 1rem 0;
+}
+#contact .contact-info .icon{
+ text-align: center;
+ margin: 4rem 6rem;
+ color: white;
+ font-family: 'Quicksand';
+ font-size: 0.8rem;
+ width: 200px;
+}
+#contact .contact-info .underline {
+display: block;
+width: 200px;
+text-align: center;
+margin: auto;
+border-top: 3px solid white;
+}
+#contact .footer-end{
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+
+
